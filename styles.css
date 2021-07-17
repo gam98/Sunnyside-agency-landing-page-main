@@ -364,4 +364,20 @@ h1 {
         justify-content: center;
         gap: 2.5rem;
     }
+    .menu-item {
+        transition: transform .3s;
+    }
+    .menu-item:last-child:hover {
+        transform: scale(1.05);
+    }
+    .menu-link--active:hover {
+        background-color: #71d1fd;
+        color: var(--white);
+    }
+    .section-info .section-link:hover {
+        opacity: 1;
+    }
+    .footer-link:hover, .footer-social-media:hover {
+        color: var(--white);
+    }
 }
