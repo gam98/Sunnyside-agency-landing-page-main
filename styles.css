@@ -194,6 +194,9 @@ h1 {
 .section-h3--blue, .section-p--blue {
     color: var(--very-dark-desaturated-blue);
 }
+.section-flex--cards {
+    flex-wrap: wrap;
+}
 .section-testimonial-card {
     margin-bottom: 3rem;
 }
@@ -262,4 +265,59 @@ h1 {
 }
 .footer-social-media {
     color: var(--dark-moderate-cyan);
+}
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .menu-icon {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        margin-top: 3rem;
+        display: block;
+        display: flex;
+        gap: 1rem;
+    }
+    .menu-link {
+        color: var(--white);
+    }
+    .menu-link--active {
+        background-color: var(--white);
+        color: var(--very-dark-desaturated-blue);
+    }
+    .img-logo {
+        padding: 0;
+    }
+    .img-hero {
+        background: url(./images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position: center;
+        height: 427px;
+    }
+    .section-flex {
+        flex-wrap: nowrap;
+        margin-bottom: 0;        
+    }
+    .section-info {
+        padding: 1rem;
+    }
+    .section-flex-img {
+        width: 50vw;
+    }
+    .section-flex--row-reverse {
+        flex-direction: row-reverse;
+    }
+    .section-flex--cards {
+        flex-wrap: wrap;
+    }
+    .img-testimonial {
+        width: 20vw;
+    }
 }
